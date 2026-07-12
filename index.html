@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Launchpad - Products & Services That Are Unique and New</title>
+  <link rel="icon" href="images/logo.png">
+  <!-- Poppins font from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Our stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ===================== 1. NAVBAR ===================== -->
+  <header class="navbar">
+    <div class="container navbar__inner">
+
+      <!-- Logo on the left -->
+      <a href="index.html" class="logo">
+        <img src="./images/logo.png" alt="Logo" class="logo__img">
+      </a>
+
+      <!-- Navigation links + search (grouped so we can toggle on mobile) -->
+      <nav class="nav" id="nav-menu">
+        <ul class="nav__links">
+          <li><a href="#categories">Business</a></li>
+          <li><a href="#new-launches">Knowledge</a></li>
+          <li><a href="#trending">Culture</a></li>
+          <li><a href="#influencers">Start Ups</a></li>
+        </ul>
+
+        <!-- Search bar in the center -->
+        <!-- <form class="search" onsubmit="return false;">
+          <input type="text" class="search__input" placeholder="Quick Search" />
+          <button class="search__btn" aria-label="Search">&#128269;</button>
+        </form> -->
+        <div class="search">
+          <input type="text" class="search__input" placeholder="Quick Search">
+          <img src="images/bi_search.png" alt="search" class="search_img">
+        </div>
+
+        <!-- Two buttons on the right -->
+        <div class="nav__actions">
+          <button class="btn btn-red">Launch Your Project</button>
+          <button class="btn btn--red">Login/SignUp</button>
+        </div>
+      </nav>
+
+      <!-- Hamburger button (only visible on mobile) -->
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===================== 2. HERO SLIDER ===================== -->
+  <section class="hero">
+    <!-- Slides: each slide is a background image + centered text -->
+    <div class="hero__slides" id="hero-slides">
+      <div class="hero__slide is-active" style="background-image:url('images/hero-1.jpg');"></div>
+      <div class="hero__slide" style="background-image:url('images/hero-2.jpg');"></div>
+      <div class="hero__slide" style="background-image:url('images/hero-3.jpg');"></div>
+      <div class="hero__slide" style="background-image:url('images/hero-4.jpg');"></div>
+    </div>
+
+    <!-- Dark overlay so white text is readable -->
+    <div class="hero__overlay"></div>
+
+    <!-- Centered heading text -->
+    <div class="hero__content">
+      <h1 class="hero__title">
+        Launchpad For Products <br />
+        Services That Have Something <br />
+        Unique and New
+      </h1>
+
+      <!-- Slider dots below the text -->
+      <div class="hero__dots" id="hero-dots">
+        <span class="dot is-active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+
+    <!-- Left / right navigation arrows -->
+    <button class="hero__arrow hero__arrow--left" id="hero-prev" aria-label="Previous slide">&#10094;</button>
+    <button class="hero__arrow hero__arrow--right" id="hero-next" aria-label="Next slide">&#10095;</button>
+  </section>
+
+  <!-- ===================== 3. CATEGORIES ===================== -->
+  <section class="section categories" id="categories">
+    <div class="container">
+      <h2 class="section__title">Categories</h2>
+
+      <!-- 6 category cards in a CSS Grid -->
+      <div class="categories__grid">
+        <a href="#" class="cat-card">
+          <img src="images/cat-automobile.jpg" alt="Automobile" />
+          <span class="cat-card__label">Automobile</span>
+        </a>
+        <a href="#" class="cat-card">
+          <img src="images/cat-arts.jpg" alt="Arts & Entertainment" />
+          <span class="cat-card__label">Arts &amp; Entertainment</span>
+        </a>
+        <a href="#" class="cat-card">
+          <img src="images/cat-appliances.jpg" alt="Home Appliances" />
+          <span class="cat-card__label">Home Appliances</span>
+        </a>
+        <a href="#" class="cat-card">
+          <img src="images/cat-electronics.jpg" alt="Electronics" />
+          <span class="cat-card__label">Electronics</span>
+        </a>
+        <a href="#" class="cat-card">
+          <img src="images/influencer-1.jpg" alt="Education" />
+          <span class="cat-card__label">Education</span>
+        </a>
+        <a href="#" class="cat-card">
+          <img src="images/cat-personalcare.jpg" alt="Personal Care" />
+          <span class="cat-card__label">Personal Care</span>
+        </a>
+      </div>
+
+      <!-- Explore button below the grid -->
+      <div class="section__cta">
+        <button class="btn btn--red btn--wide">Explore</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 4. NEW LAUNCHES ===================== -->
+  <section class="section new-launches" id="new-launches">
+    <div class="container">
+      <h2 class="section__title">New Launches</h2>
+      <p class="section__subtitle">
+        Find topics based on your interest, find curated content to increase your day to
+        day knowledge and stay update with latest news and industry trends
+      </p>
+
+      <!-- Four launch cards in a 2x2 grid -->
+      <div class="launch__grid">
+
+        <!-- Card template repeated 4 times -->
+        <article class="launch-card">
+          <img class="launch-card__img" src="images/launch-1.jpg" alt="Launch" />
+          <div class="launch-card__body">
+            <!-- Interaction icons row -->
+            <div class="launch-card__icons">
+              <span class="avatar"></span>
+              <span class="icons">&#128065; 200 &#128172; 200 &#x27A4;200 &#10084;&#65039; 200</span>
+            </div>
+            <h3 class="launch-card__title">
+              But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and
+            </h3>
+            <p class="launch-card__desc">
+              But I must explain to you how all this mistaken idea of denouncing pleasure and
+              praising pain was born and I will give you a complete account of the system.
+            </p>
+            <div class="launch-card__footer">
+              <span class="avatar avatar--sm"></span>
+              <button class="btn btn--outline btn--sm">Discover Now</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="launch-card">
+          <img class="launch-card__img" src="images/video-2.jpg" alt="Launch" />
+          <div class="launch-card__body">
+            <div class="launch-card__icons">
+              <span class="avatar"></span>
+              <span class="icons">&#128065; 200 &#128172; 200 &#x27A4;200 &#10084;&#65039; 200</span>
+            </div>
+            <h3 class="launch-card__title">
+              But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and
+            </h3>
+            <p class="launch-card__desc">
+              But I must explain to you how all this mistaken idea of denouncing pleasure and
+              praising pain was born and I will give you a complete account of the system.
+            </p>
+            <div class="launch-card__footer">
+              <span class="avatar avatar--sm"></span>
+              <button class="btn btn--outline btn--sm">Discover Now</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="launch-card">
+          <img class="launch-card__img" src="images/launch-2.jpg" alt="Launch" />
+          <div class="launch-card__body">
+            <div class="launch-card__icons">
+              <span class="avatar"></span>
+              <span class="icons">&#128065; 200 &#128172; 200 &#x27A4;200 &#10084;&#65039; 200</span>
+            </div>
+            <h3 class="launch-card__title">
+              But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and
+            </h3>
+            <p class="launch-card__desc">
+              But I must explain to you how all this mistaken idea of denouncing pleasure and
+              praising pain was born and I will give you a complete account of the system.
+            </p>
+            <div class="launch-card__footer">
+              <span class="avatar avatar--sm"></span>
+              <button class="btn btn--outline btn--sm">Discover Now</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="launch-card">
+          <img class="launch-card__img" src="images/launch-4.jpg" alt="Launch" />
+          <div class="launch-card__body">
+            <div class="launch-card__icons">
+              <span class="avatar"></span>
+              <span class="icons">&#128065; 200 &#128172; 200 &#x27A4;200 &#10084;&#65039; 200</span>
+            </div>
+            <h3 class="launch-card__title">
+              But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and
+            </h3>
+            <p class="launch-card__desc">
+              But I must explain to you how all this mistaken idea of denouncing pleasure and
+              praising pain was born and I will give you a complete account of the system.
+            </p>
+            <div class="launch-card__footer">
+              <span class="avatar avatar--sm"></span>
+              <button class="btn btn--outline btn--sm">Discover Now</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- More button -->
+      <div class="section__cta">
+        <button class="btn btn--red btn--wide">More</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 5. FEATURE STRIP (red band) ===================== -->
+  <section class="feature-strip">
+    <div class="container feature-strip__inner">
+      <article class="feature-card">
+        <div class="feature-card__icon"><img src="images/fire.png" alt="" style="  background:  #be0006;"></div>
+        <h3 class="feature-card__title" style="color: #be0006;">TRENDING NOW</h3>
+        <p class="feature-card__text">Find interesting blogs that are trending now</p>
+      </article>
+      <article class="feature-card">
+        <div class="feature-card__icon"><img src="images/watch.png" alt=""></div>
+        <h3 class="feature-card__title">New Releases</h3>
+        <p class="feature-card__text">Catch up on all the latest blogs</p>
+      </article>
+      <article class="feature-card">
+        <div class="feature-card__icon"><img src="images/star.png" alt=""></div>
+        <h3 class="feature-card__title">POPULAR PICKS</h3>
+        <p class="feature-card__text">Find the blogs popular among the readers</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===================== 6. TRENDING NOW ===================== -->
+  <section class="section trending" id="trending">
+    <div class="container">
+      <h2 class="section__title">Trending Now</h2>
+
+      <div class="trending__slider">
+        <!-- Left arrow -->
+        <button class="trending__arrow trending__arrow--left" id="trend-prev" aria-label="Previous">&#10094;</button>
+
+        <!-- Track holds the 3 visible cards (side cards are faded) -->
+        <div class="trending__track" id="trending-track">
+          <article class="trend-card trend-card--side">
+            <img src="images/trend-1.jpg" alt="Trend" />
+            <div class="trend-card__body">
+              <div class="trend-card__icons">
+                <span class="avatar"></span>
+                <span class="icons">&#128065; 200 &#128172; 200 &#x27A4;200 &#10084;&#65039; 200</span>
+              </div>
+              <h3 class="trend-card__title">
+                But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born
+                and
+              </h3>
+              <p class="trend-card__desc"> But I must explain to you how all this mistaken idea of denouncing pleasure
+                and
+                praising pain was born and I will give you a complete account of the system.</p>
+              <button class="btn btn--outline btn--sm">Discover Now</button>
+            </div>
+          </article>
+
+          <article class="trend-card trend-card--active">
+            <img src="images/trend-2.jpg" alt="Trend" />
+            <div class="trend-card__body">
+              <div class="trend-card__icons">
+                <span class="avatar"></span>
+                <span class="icons">&#128065; 200 &#128172; 200 &#x27A4;200 &#10084;&#65039; 200</span>
+              </div>
+              <h3 class="trend-card__title">
+                But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born
+                and
+              </h3>
+              <p class="trend-card__desc"> But I must explain to you how all this mistaken idea of denouncing pleasure
+                and
+                praising pain was born and I will give you a complete account of the system.</p>
+              <button class="btn btn--outline btn--sm">Discover Now</button>
+            </div>
+          </article>
+
+          <article class="trend-card trend-card--side">
+            <img src="images/trend-3.jpg" alt="Trend" />
+            <div class="trend-card__body">
+              <div class="trend-card__icons">
+                <span class="avatar"></span>
+                <span class="icons">&#128065; 200 &#128172; 200 &#x27A4;200 &#10084;&#65039; 200</span>
+              </div>
+              <h3 class="trend-card__title">
+                But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born
+                and
+              </h3>
+              <p class="trend-card__desc"> But I must explain to you how all this mistaken idea of denouncing pleasure
+                and
+                praising pain was born and I will give you a complete account of the system.</p>
+              <button class="btn btn--outline btn--sm">Discover Now</button>
+            </div>
+          </article>
+        </div>
+
+        <!-- Right arrow -->
+        <button class="trending__arrow trending__arrow--right" id="trend-next" aria-label="Next">&#10095;</button>
+      </div>
+
+      <div class="section__cta">
+        <button class="btn btn--red btn--wide">More</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 7. VIDEOS ===================== -->
+  <section class="videos">
+    <div class="container videos__inner">
+      <!-- Left side content + arrows -->
+      <div class="videos__left">
+        <h2 class="videos__title">Videos</h2>
+        <p class="videos__text">
+          Progressively incentivize cooperative systems through technically sound
+          functionalities. The credibly productivize seamless data.
+        </p>
+        <div class="videos__arrows">
+          <button class="videos__arrow" id="video-prev" aria-label="Previous">&#10094;</button>
+          <button class="videos__arrow" id="video-next" aria-label="Next">&#10095;</button>
+        </div>
+      </div>
+
+      <!-- Right side: horizontal slider of video thumbnails -->
+      <div class="videos__viewport">
+        <div class="videos__track" id="videos-track">
+          <div class="video-card">
+            <img src="images/video-1.jpg" alt="Video" />
+            <button class="video-card__play" aria-label="Play">&#9654;</button>
+            <div class="video-card__meta">
+              <span class="video-card__date">05.03.2021</span>
+              <p class="video-card__title">Richard Norton photorealistic rendering as real photos</p>
+            </div>
+          </div>
+          <div class="video-card">
+            <img src="images/video-2.jpg" alt="Video" />
+            <button class="video-card__play" aria-label="Play">&#9654;</button>
+            <div class="video-card__meta">
+              <span class="video-card__date">05.03.2021</span>
+              <p class="video-card__title">Richard Norton photorealistic rendering as real photos</p>
+            </div>
+          </div>
+          <div class="video-card">
+            <img src="images/video-3.jpg" alt="Video" />
+            <button class="video-card__play" aria-label="Play">&#9654;</button>
+            <div class="video-card__meta">
+              <span class="video-card__date">05.03.2021</span>
+              <p class="video-card__title">Richard Norton photorealistic rendering as real photos</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 8. INFLUENCER'S PICK ===================== -->
+  <section class="section influencers" id="influencers">
+    <div class="container">
+      <h2 class="section__title">Influencer's Pick</h2>
+
+      <div class="influencers__grid">
+        <!-- Horizontal card: image left, text right -->
+        <article class="influencer-card">
+          <img src="images/influencer-2.jpg" alt="Influencer" />
+          <div class="influencer-card__body">
+            <div class="launch-card__icons">
+              <span class="avatar"></span>
+              <span class="icons"> &#128278; &#x27A4;</span>
+            </div>
+            <p class="influencer-card__title">
+              But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born
+            </p>
+            <p class="influencer-card__desc">
+              But I must explain to you how all this mistaken idea of denouncing pleasure
+              and praising pain was born.
+            </p>
+            <button class="btn btn--outline btn--sm">Discover Now</button>
+          </div>
+        </article>
+
+        <article class="influencer-card">
+          <img src="images/influencer-2.jpg" alt="Influencer" />
+          <div class="influencer-card__body">
+            <div class="launch-card__icons">
+              <span class="avatar"></span>
+              <span class="icons"> &#128278; &#x27A4;</span>
+            </div>
+            <p class="influencer-card__title">
+              But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born
+            </p>
+            <p class="influencer-card__desc">
+              But I must explain to you how all this mistaken idea of denouncing pleasure
+              and praising pain was born.
+            </p>
+            <button class="btn btn--outline btn--sm">Discover Now</button>
+          </div>
+        </article>
+      </div>
+
+      <div class="section__cta">
+        <button class="btn btn--red btn--wide">More</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 9. FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <!-- Top row: newsletter + contributor -->
+      <div class="footer__top">
+        <div class="footer__newsletter">
+          <h3 class="footer__heading">Subscribe Our News letter</h3>
+          <form class="newsletter" onsubmit="return false;">
+            <input type="email" class="newsletter__input" placeholder="Enter Your Mailing Address" />
+            <button class="newsletter__btn" aria-label="Subscribe">&#8594;</button>
+          </form>
+        </div>
+
+        <div class="footer__contributor">
+          <h3 class="footer__heading">Become A Contributor</h3>
+          <button class="btn btn--dark">Launch Your Product</button>
+        </div>
+      </div>
+
+      <!-- Columns row -->
+      <div class="footer__columns">
+        <div class="footer__col">
+          <h4>COMPANY</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Vision</a></li>
+            <li><a href="#">Mission</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>PRODUCTS</h4>
+          <ul>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">Culture</a></li>
+            <li><a href="#">Knowledge</a></li>
+            <li><a href="#">Start Up</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>RESOURCES</h4>
+          <ul>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Videos</a></li>
+          </ul>
+        </div>
+        <div class="footer__col footer__social">
+          <h4>FOLLOW US ON SOCIAL MEDIA</h4>
+          <div class="footer__icons">
+            <a href="#" aria-label="Twitter">&#128038;</a>
+            <a href="#" aria-label="Google">G</a>
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+          </div>
+          <div class="footer__policies">
+            <a href="#">Terms &amp; Conditions</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Cookies Policy</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom copyright -->
+      <div class="footer__bottom">
+        <p>copyright</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Our JavaScript -->
+  <script src="script.js"></script>
+</body>
+
+</html>
