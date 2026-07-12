@@ -237,7 +237,7 @@ img {
   inset: 0; /* top/right/bottom/left = 0 */
 }
 
-/* Each slide stacks on top; only the active one is visible */
+/* only the active one is visible */
 .hero__slide {
   position: absolute;
   inset: 0;
@@ -621,7 +621,7 @@ img {
 .videos__track {
   display: flex;
   gap: 20px;
-  transition: transform 0.4s ease; /* slides left/right via JS */
+  transition: transform 0.4s ease; 
 }
 .video-card {
   position: relative;
