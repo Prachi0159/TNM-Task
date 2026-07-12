@@ -406,7 +406,6 @@ img {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  /* background: linear-gradient(135deg, var(--red), #7a1fc8); */
   display: inline-block;
   background-image: url('images/avatar1.jpg');
   background-size: cover;
@@ -469,10 +468,6 @@ img {
 .feature-card:hover {
   transform: translateY(-5px);
 }
-/* .feature-card__icon {
-  font-size: 26px;
-  margin-bottom: 10px;
-} */
 .feature-card__icon img {
     width: 54px;
     height: 54px;
@@ -487,7 +482,6 @@ img {
 
 
 .feature-card__title {
-  /* color: var(--red); */
   color:  #3C4852;;
   font-size: 17px;
   margin-bottom: 6px;
@@ -607,9 +601,8 @@ img {
   gap: 10px;
 }
 .videos__arrow {
-  background: transparent;
   border: 1px solid #55606e;
-  color: var(--white);
+  color: var(--red);
   width: 36px;
   height: 36px;
   border-radius: 50%;
